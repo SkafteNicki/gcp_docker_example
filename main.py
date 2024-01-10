@@ -1,6 +1,6 @@
 from sklearn import datasets, svm, metrics
 from sklearn.model_selection import train_test_split
-
+#This looks good! I made a change here :)
 
 if __name__ == '__main__':
     digits = datasets.load_digits()
@@ -24,7 +24,7 @@ if __name__ == '__main__':
     predicted = clf.predict(X_test)
 
     print(
-        f"Classification report for classifier {clf}:\n"
+        f"Classification report for classifier from skaftes original, pushed to local repo {clf}:\n"
         f"{metrics.classification_report(y_test, predicted)}\n"
     )
 
